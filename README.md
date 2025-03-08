@@ -26,7 +26,9 @@ Este repositório é voltado para a análise dos microdados do **ENEM 2022**. O 
    ```bash
    pip install -r requirements.txt
 
-3. **Execute /scripts/download_microdados_2022.py para baixar os microdados**
+3. **Execute o script para baixar os microdados**  
+   ```bash
+   python scripts/download_microdados_2022.py
    
 4. **Execute os outros notebooks ou scripts, conforme necessário**
 
