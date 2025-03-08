@@ -19,8 +19,8 @@ Este repositório é voltado para a análise dos microdados do **ENEM 2022**. O 
 
 1. **Clone este repositório**  
    ```bash
-   git clone https://github.com/seu-usuario/dados_enem.git
-   cd dados_enem
+   git clone https://github.com/jrsuri/enem-analytics.git
+   cd enem-analytics
 
 2. **Instale as dependências**
    ```bash
