@@ -35,5 +35,9 @@ Este repositório é voltado para a análise dos microdados do **ENEM 2022**. O 
 ## Sobre os microdados do ENEM 2022
 Os microdados do ENEM são disponibilizados pelo INEP e contêm informações detalhadas sobre os participantes, suas respostas e resultados nas provas. Neste projeto, utilizamos esses dados para análise estatística e modelagem preditiva.
 
+## Requisitos  
+- Python 3.10+  
+- Bibliotecas listadas em `requirements.txt`
+
 ## Licença
 Este repositório segue a licença MIT.
