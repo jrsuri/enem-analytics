@@ -30,7 +30,12 @@ Este repositório é voltado para a análise dos microdados do **ENEM 2022**. O 
    ```bash
    python scripts/download_microdados_2022.py
    
-4. **Execute os outros notebooks ou scripts, conforme necessário**
+4. **Execute os notebooks na ordem em que aparecem**
+
+## Caso queira apenas fazer previsões
+1. **Execute o script a seguir**
+   ```bash
+   python scripts/inferencia.py
 
 ## Sobre os microdados do ENEM 2022
 Os microdados do ENEM são disponibilizados pelo INEP e contêm informações detalhadas sobre os participantes, suas respostas e resultados nas provas. Neste projeto, utilizamos esses dados para análise estatística e modelagem preditiva.
