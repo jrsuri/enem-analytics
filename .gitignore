@@ -171,5 +171,7 @@ cython_debug/
 .pypirc
 
 /notebooks/sandbox.ipynb
+/data/df_prep.csv
+/data/df_encoded.csv
 /data/microdados_enem_2022.zip
 /data/microdados_enem_2022/
