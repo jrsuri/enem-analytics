@@ -45,10 +45,10 @@ try:
 
     os.remove(output_path)
     print('Processo finalizado. Os microdados estão disponíveis na pasta:', extract_path)
-    print('Pressione qualquer tecla para fechar.')
+    print('\nPressione qualquer tecla para fechar.')
     msvcrt.getch()
 
 except Exception as e:
     print(e)
-    print('Pressione qualquer tecla para fechar.')
+    print('\nPressione qualquer tecla para fechar.')
     msvcrt.getch()
