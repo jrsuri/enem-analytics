@@ -1,5 +1,4 @@
 # Requer Python 3.10 ou superior
-python>=3.10
 
 ipython==8.22.2
 pandas==1.5.3
