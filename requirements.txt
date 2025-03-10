@@ -4,7 +4,7 @@ ipython==8.22.2
 pandas==1.5.3
 numpy==1.26.4
 tqdm==4.66.2
-scikit-learn==1.4.1
+scikit-learn
 matplotlib==3.8.4
 seaborn==0.13.2
 xgboost==2.1.4
