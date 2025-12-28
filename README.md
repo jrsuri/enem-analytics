@@ -16,12 +16,19 @@ The ENEM (Exame Nacional do Ensino Médio) is the primary standardized high scho
 ## Repository Structure
 - /data/ – Dataset (samples and reference files) and output files
 - /models/ – Trained models
-- /notebooks/ – Analysis and modeling notebooks
+- /notebooks/ – Analysis and modeling notebooks (ordered and numbered for execution)
 - /scripts/ – Data download and inference scripts
 - dataset_description.md – Dataset description
 - LICENSE – Repository license
 - README.md – Repository explanation and general guidelines
 - requirements.txt – Project dependency list
+
+## Reproducibility & Environment
+This project was developed in Python 3.10+. All required libraries are listed in `requirements.txt`.
+
+The notebooks are numbered and should be executed **in the order they appear**, reflecting the analytical workflow of the project (data understanding → exploration → modeling → results).
+
+The modeling decisions, comparison between approaches, and evaluation metrics are documented in notebooks 3 and 4.
 
 ## How to Reproduce the Project
 1. Clone this repository
@@ -36,12 +43,43 @@ The ENEM (Exame Nacional do Ensino Médio) is the primary standardized high scho
 
 4. Run the notebooks in the order they appear
 
+## Modeling Overview
+This project frames the task as a binary classification problem, where the model predicts whether a candidate is likely to achieve a high score or not.
+
+Two machine learning approaches were tested during the project:
+- Random Forest
+- XGBoost (final selected model)
+
+The XGBoost model was chosen based on its performance and is implemented and documented in **notebook 04 – Modeling**.
+
+The notebook contains:
+- model training and comparison
+- evaluation workflow
+- metrics and interpretation context
+
+## Evaluation & Results
+The evaluation process and performance metrics are presented in notebook 4, including the comparison between Random Forest and XGBoost and the rationale for selecting the final model.
+
+The final XGBoost model achieved a **ROC AUC of 0.7456** and a **Matthews Correlation Coefficient (MCC) of 0.3838** on the evaluation dataset.
+
 ## To Run Predictions Only
 1. Run the following script
    python scripts/inference.py
 
+The script receives user inputs directly in the terminal and returns a probability-based prediction from the trained XGBoost model.
+
+The output format is:
+
+*** RESULT ***
+The model predicts that the candidate will have a HIGH score, with a probability of XX%
+
+or
+
+*** RESULT ***
+The model predicts that the candidate will NOT have a high score, with a probability of XX%
+
 ## About the ENEM 2022 Microdata
-The ENEM microdata are provided by INEP and contain detailed information about participants, their answers, and exam results. In this project, we use this data for statistical analysis and predictive modeling.
+The ENEM microdata are provided by INEP and contain detailed information about participants, their answers, and exam results. In this project, the dataset is used for statistical analysis and predictive modeling in an educational and research-oriented context.
 
 ## Requirements
 - Python 3.10+
