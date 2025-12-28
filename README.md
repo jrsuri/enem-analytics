@@ -1,47 +1,51 @@
-# Análise dos Microdados do ENEM 2022
+# ENEM 2022 Microdata Analysis
 
-## Objetivo do projeto
-Este repositório é voltado para a análise dos microdados do **ENEM 2022**. O projeto inclui organização de dados, análise exploratória, modelagem de machine learning e considerações para deploy.
+## Project Objective
+This repository is dedicated to analyzing the ENEM 2022 microdata. The project includes data organization, exploratory analysis, machine learning modeling, and deployment considerations.
 
-## Estrutura do repositório
+## What is ENEM?
+The ENEM (Exame Nacional do Ensino Médio) is the primary standardized high school exam in Brazil. For an international context, it is the Brazilian equivalent of the SAT or ACT in the United States.
 
-- **`/data/`** – Conjunto de dados (amostras e arquivos de referência) e arquivos de saída
-- **`/models/`** – Modelos treinados
-- **`/notebooks/`** – Notebooks de análise e modelagem
-- **`/scripts/`** – Scripts de download dos dados e inferência
-- **`dataset_description.md`** – Descrição do dataset
-- **`LICENSE`** – Licença do repositório
-- **`README.md`** – Explicação do repositório e orientações gerais
-- **`requirements.txt`** – Lista de dependências do projeto
+### Key points:
+* College Entrance: It is the main gateway to higher education in Brazil, used for admission into nearly all public universities.
+* Massive Scale: It is one of the largest exams in the world, taken by millions of candidates simultaneously across the country.
+* Subjects: Covers Natural Sciences, Human Sciences, Languages, Mathematics, and a mandatory essay.
+* Scoring (IRT): It uses Item Response Theory, where questions are weighted based on difficulty and consistency rather than just raw correct answers.
+* Social Impact: It is a crucial tool for social mobility, providing access to scholarships and student loans.
 
-## Como reproduzir o projeto
+## Repository Structure
+- /data/ – Dataset (samples and reference files) and output files
+- /models/ – Trained models
+- /notebooks/ – Analysis and modeling notebooks
+- /scripts/ – Data download and inference scripts
+- dataset_description.md – Dataset description
+- LICENSE – Repository license
+- README.md – Repository explanation and general guidelines
+- requirements.txt – Project dependency list
 
-1. **Clone este repositório**
-   ```bash
+## How to Reproduce the Project
+1. Clone this repository
    git clone https://github.com/jrsuri/enem-analytics.git
    cd enem-analytics
 
-2. **Instale as dependências**
-   ```bash
+2. Install dependencies
    pip install -r requirements.txt
 
-3. **Execute o script para baixar os microdados**
-   ```bash
+3. Run the script to download the microdata
    python scripts/download_microdados_2022.py
-   
-4. **Execute os notebooks na ordem em que aparecem**
 
-## Caso queira apenas fazer previsões
-1. **Execute o script a seguir**
-   ```bash
-   python scripts/inferencia.py
+4. Run the notebooks in the order they appear
 
-## Sobre os microdados do ENEM 2022
-Os microdados do ENEM são disponibilizados pelo INEP e contêm informações detalhadas sobre os participantes, suas respostas e resultados nas provas. Neste projeto, utilizamos esses dados para análise estatística e modelagem preditiva.
+## To Run Predictions Only
+1. Run the following script
+   python scripts/inference.py
 
-## Requisitos
+## About the ENEM 2022 Microdata
+The ENEM microdata are provided by INEP and contain detailed information about participants, their answers, and exam results. In this project, we use this data for statistical analysis and predictive modeling.
+
+## Requirements
 - Python 3.10+
-- Bibliotecas listadas em `requirements.txt`
+- Libraries listed in requirements.txt
 
-## Licença
-Este repositório segue a licença MIT.
+## License
+This repository follows the MIT license.
